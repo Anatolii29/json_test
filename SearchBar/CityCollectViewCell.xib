@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CityCollectViewCell" id="iN0-l3-epB" customClass="CityCollectViewCell" customModule="json_test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="187"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Lq-HS-zPq">
+                    <rect key="frame" x="0.0" y="0.0" width="305" height="187"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKO-Nr-JtZ">
+                    <rect key="frame" x="126.5" y="83" width="52" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.80516546960000002" green="0.083066530530000002" blue="0.17043375969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2Lq-HS-zPq" secondAttribute="trailing" id="9nG-DE-KTW"/>
+                <constraint firstItem="2Lq-HS-zPq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CL9-LR-Jud"/>
+                <constraint firstItem="uKO-Nr-JtZ" firstAttribute="centerX" secondItem="2Lq-HS-zPq" secondAttribute="centerX" id="Dq6-IN-PUw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uKO-Nr-JtZ" secondAttribute="trailing" constant="10" id="OPA-tc-Lt8"/>
+                <constraint firstItem="2Lq-HS-zPq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="aOW-wd-ycJ"/>
+                <constraint firstItem="uKO-Nr-JtZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="j7V-x6-D2A"/>
+                <constraint firstItem="uKO-Nr-JtZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="39" id="kVp-Rn-oFC"/>
+                <constraint firstAttribute="bottom" secondItem="2Lq-HS-zPq" secondAttribute="bottom" id="x1S-KU-B8K"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cityImage" destination="2Lq-HS-zPq" id="8fX-kG-IOv"/>
+                <outlet property="cityLabel" destination="uKO-Nr-JtZ" id="95g-Lu-c23"/>
+            </connections>
+            <point key="canvasLocation" x="52.898550724637687" y="-142.96875"/>
+        </view>
+    </objects>
+</document>
