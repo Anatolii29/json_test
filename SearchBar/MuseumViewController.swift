@@ -27,6 +27,7 @@ class MuseumViewController: UIViewController {
 
     func update(museum: Museum?) {
         currentMuseum = museum
+        
     }
     
     func fillData() {
